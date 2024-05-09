@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  firstcompose:
+    image: devopsdockeruh/simple-web-service
+    build: .
+    volumes:
+      - /home/eeritvan/DevOps/part 2/2.1/text.log:/usr/src/app/text.log
+    container_name: logger

@@ -1,0 +1,5 @@
+terminal 1:
+$ docker compose run web-service
+
+terminal 2:
+$ docker compose up
