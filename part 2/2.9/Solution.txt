@@ -1,0 +1,4 @@
+$ docker compose up
+
+Changes made:
+I updated the environmental variables in both Dockerfiles to use /api/ instead of the fixed port. This made the buttons work again with Nginx.
