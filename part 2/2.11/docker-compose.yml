@@ -6,7 +6,7 @@ services:
     container_name: website
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@postgres/postgres
-      - SECRET_KEY=88b3ce7c5d2f1a270359d0144b689987
+      - SECRET_KEY=<YOUR_SECRET_KEY>
 
   postgres:
     image: postgres:alpine
