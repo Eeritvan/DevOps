@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  website:
+    image: server
+    container_name: website
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@postgres/postgres
+      - SECRET_KEY=88b3ce7c5d2f1a270359d0144b689987
+
+  postgres:
+    image: postgres:alpine
+    container_name: postgres
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/0schema.sql
+      - ./inserts.sql:/docker-entrypoint-initdb.d/1inserts.sql
+    
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf

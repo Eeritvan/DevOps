@@ -1,0 +1,13 @@
+Changes made:
+I removed the fixed ports for the frontend and backend from the docker-compose.yml. Now they are no longer directly accessible. Here's the port scan:
+
+$ docker compose up
+
+$ docker run -it --rm --network host networkstatic/nmap localhost
+    Starting Nmap 7.92 ( https://nmap.org ) at 2024-05-10 09:49 UTC
+    Nmap scan report for localhost (127.0.0.1)
+    Host is up (0.0000030s latency).
+    Not shown: 998 closed tcp ports (reset)
+    PORT     STATE SERVICE
+    80/tcp   open  http
+    5432/tcp open  postgresql
