@@ -22,7 +22,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: part 3/3.1/express-app/
           file: part 3/3.1/express-app/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/devops-express:latest
