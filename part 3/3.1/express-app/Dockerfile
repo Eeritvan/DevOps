@@ -1,6 +1,6 @@
 FROM node:16
 
-COPY . .
+COPY part3_3.1_express-app/ .
 
 RUN npm install
 
