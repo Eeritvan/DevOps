@@ -24,5 +24,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
+          context: .
+          dockerfile: part 3/3.1/Dockerfile
           push: true
           tags: eeritvan/devops-express:latest
