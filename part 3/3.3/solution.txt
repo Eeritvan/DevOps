@@ -1,0 +1,1 @@
+$ bash builder.sh <github_repo> <dockerhub_repo>
