@@ -1,0 +1,8 @@
+FRONTEND:
+$ docker build -t frontend -f frontend.Dockerfile .
+$ docker run -p 5000:5000 frontend
+
+
+BACKEND:
+$ docker build -t backend -f backend.Dockerfile .
+$ docker run -p 8080:8080 backend
