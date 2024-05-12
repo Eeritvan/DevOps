@@ -1,0 +1,2 @@
+Original: 435MB
+Optimized: 134MB
