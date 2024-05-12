@@ -1,0 +1,7 @@
+Original;
+Frontend: 1.27GB
+Backend: 1.07GB
+
+Optimized;
+Frontend: 918MB
+Backend: 1.01GB
